@@ -26,6 +26,13 @@
     "email": "julia.schafer@vortigo.com.br"
   },
   "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vortigo-digital/react-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vortigo-digital/react-hooks/issues"
+  },
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0"
