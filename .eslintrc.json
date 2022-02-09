@@ -7,5 +7,5 @@
   "rules": {
     "max-len": ["error", 80]
   },
-  "ignorePatterns": ["src/**/*.test.ts"]
+  "ignorePatterns": ["src/**/*.test.ts", "src/**/*.md", "src/**/*.html"]
 }
