@@ -23,5 +23,6 @@ We're constantly monitoring for pull requests. We will review it and merge, ask 
 - Create a new folder with the name of the hook, following the rules of hooks convention;
 - Create an `index.ts` file where the hook is implemented
 - Create a test file with the name convention of `<hook-name>.test.ts`;
+- The hook could be tested directly when possible, but it can be tested indirectly using a component, another files can be created to achive that
 - Create a `README.md` file describing the usage of the hook, follow the convention of the others hooks readme files;
 - Create an `example.html` file where the hooks is used.
