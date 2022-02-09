@@ -1,5 +1,5 @@
 node_modules
 /lib
 .dccache
-parcel-cache
+.parcel-cache
 dist
