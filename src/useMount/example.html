@@ -1,0 +1,26 @@
+<div id="root"></div>
+<script type="module">
+  import React from 'react';
+  import ReactDOM from "react-dom";
+
+  import useMount from './index';
+
+  const app = document.querySelector('#root');
+  ReactDOM.render(<Example />, app)
+
+  function logKey(e) {
+    console.log(e.key);
+  }
+
+  export default function Example() {
+    useMount(() => {
+      document.addEventListener('keyup', logKey);
+
+      return () => {
+        document.removeEventListener('keyup', logKey);
+      };
+    });
+
+    return <div>Example page</div>;
+  }
+</script>

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+
+    "module": "commonjs" /* Specify what module code is generated. */,
+
+    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "outDir": "./lib" /* Specify an output folder for all emitted files. */,
+    "removeComments": false /* Disable emitting comments. */,
+    "importHelpers": true /* Allow importing helper functions from tslib once per project, instead of including them per-file. */,
+
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    "strict": true /* Enable all strict type-checking options. */,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
