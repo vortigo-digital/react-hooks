@@ -17,3 +17,13 @@ $ yarn add @vortigo/react-hooks
 ```ts
 import { useMount } from '@vortigo/react-hooks';
 ```
+
+# 💻 How to run the example pages
+
+```
+npm run parcel <path-to-example-page>
+```
+
+# 🤝 Contributing
+
+Please read our CONTRIBUTING.md file

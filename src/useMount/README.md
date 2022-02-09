@@ -8,6 +8,10 @@ A hook that executes a function when, and only when, the component is mounted
 | -------- | ------------------------------------------- | ---------- | --------- |
 | fn       | the function which will be invoked at mount | () => void | undefined |
 
+# Return Values
+
+N/A
+
 # Usage
 
 ```tsx
