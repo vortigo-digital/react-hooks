@@ -1,0 +1,34 @@
+<div id="root"></div>
+<script type="module">
+  import React, { useState } from 'react';
+  import ReactDOM from "react-dom";
+
+  import useUnmount from './index';
+
+  const app = document.querySelector('#root');
+  ReactDOM.render(<Example />, app)
+
+  function TestComponent(props) {
+    const { name } = props;
+
+    useUnmount(() => {
+      alert('unmount');
+    });
+
+    return <div>Hi {name}</div>
+  }
+
+  export default function Example() {
+    const [isVisible, setIsVisible] = useState(true);
+
+    function toggleVisibility() {
+      setIsVisible(visible => !visible);
+    }
+
+    return <>
+      <div>Example page</div>
+      <button onClick={toggleVisibility}>Toggle Name</button>
+      {isVisible && <TestComponent name='John Doe' />}
+    </>;
+  }
+</script>
